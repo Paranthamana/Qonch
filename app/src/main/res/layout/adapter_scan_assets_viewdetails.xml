@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/rlAdapterData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_3sdp">
+
+        <TextView
+            android:id="@+id/tvAssertViewTagIdValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_weight="1.5"
+            android:text=""
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            tools:ignore="ObsoleteLayoutParam" />
+
+        <TextView
+            android:id="@+id/tvAssertViewBarQrValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_weight="2.8"
+            android:ellipsize="middle"
+            android:fontFamily="@font/poppins_medium"
+            android:text=""
+            android:maxLength="10"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            tools:ignore="ObsoleteLayoutParam" />
+
+        <TextView
+            android:id="@+id/tvAssertViewStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:layout_weight="2.2"
+            android:ellipsize="middle"
+            android:text=""
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_10sdp"
+            tools:ignore="ObsoleteLayoutParam" />
+
+        <TextView
+            android:id="@+id/tvAuditViewTimeValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="2"
+            android:gravity="end"
+            android:text=""
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            tools:ignore="ObsoleteLayoutParam" />
+
+        <!-- Don't delete the description textview-->
+        <TextView
+            android:id="@+id/tvTypedDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_weight="2.4"
+            android:gravity="end"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp"
+            android:visibility="gone"
+            tools:ignore="ObsoleteLayoutParam" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/vViewScan"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@+id/rlAdapterData"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:background="@color/LightGray" />
+
+</RelativeLayout>

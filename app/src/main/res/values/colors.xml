@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#ff5428</color>
+    <color name="colorPrimaryDark">#F66A47</color>
+    <color name="colorAccent">#F3876B</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="LightGray">#9E9B9B</color>
+    <color name="green">#006a7d</color>
+    <color name="transparent">#CCFFFFFF</color>
+    <color name="transparent_color">#80000000</color>
+    <color name="red">#CCF60B0B</color>
+    <color name="alertGreen">#008000</color>
+    <color name="alertRed">#FF0000</color>
+    <color name="bgTransparent">#0000ffff</color>
+    <color name="semiTransparentColor">#40FFFFFF</color>
+    <color name="gray_dialog">#D8D8D8</color>
+    <color name="assets_details">#cedbe0</color>
+    <color name="lightGreen">#4DD64D</color>
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+
+    <include
+        layout="@layout/app_bar_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/headerHome"
+                layout="@layout/nav_header" />
+
+            <ListView
+                android:id="@+id/lvNavigationDrawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/llSocial"
+                android:layout_below="@+id/headerHome"
+                android:dividerHeight="0dp"
+                android:scrollbars="none" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvLogoutNav"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:drawableStart="@drawable/ic_logout_blue"
+                    android:drawablePadding="@dimen/_10sdp"
+                    android:gravity="start|center"
+                    android:padding="@dimen/_10sdp"
+                    android:text="@string/Logout"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp"
+                    tools:ignore="UseCompatTextViewDrawableXml" />
+
+                <View
+                    android:id="@+id/vScan"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_above="@+id/tvLogoutNav"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:background="@color/LightGray" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llSocial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:padding="@dimen/_15sdp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ivFBShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_20sdp" />
+
+                <ImageView
+                    android:id="@+id/ivTwitterShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

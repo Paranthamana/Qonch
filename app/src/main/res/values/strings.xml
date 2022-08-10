@@ -1,0 +1,118 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <string name="app_name">Qonch Assets</string>
+    <string name="Scan">Scan</string>
+    <string name="Reset_Password" translatable="false">Reset Password?</string>
+    <string name="New_User">New User?</string>
+    <string name="UserName">User name</string>
+    <string name="Password">Password</string>
+    <string name="RememberMe">Remember me</string>
+    <string name="forgotPassword">Forgot Password</string>
+    <string name="Submit">Submit</string>
+    <string name="Login">Login</string>
+    <string name="SearchLocation">Search Location</string>
+    <string name="SearchLocationManually">Search Location Manually</string>
+    <string name="SearchLocationFromMap">Search Location From Map</string>
+    <string name="BarcodeScanning">Barcode Scanning</string>
+    <string name="QRCodeScanning">QR Code Scanning</string>
+    <string name="RFIDScanning">RFID Scanning</string>
+    <string name="HomePressBack">Press Back again to Exit!</string>
+    <string name="Location">Location</string>
+    <string name="Building">Building</string>
+    <string name="Floor">Floor</string>
+    <string name="Section">Section</string>
+    <string name="Search">Search</string>
+    <string name="Audit">Audit</string>
+    <string name="TotalAssets">Total Assets :</string>
+    <string name="TotalAssetsScanned">Total Assets Scanned :</string>
+    <string name="PendingAssets">Pending Assets :</string>
+    <string name="ViewDetails">View Details</string>
+    <string name="AssertName">Assert Name</string>
+    <string name="AssertTagId">Asset\n Tag ID</string>
+    <string name="AssertTagIdView">Asset Tag ID</string>
+    <string name="AuditTime">Audit Time</string>
+    <string name="AuditConfiguration">Audit Configuration</string>
+    <string name="ChooseConfiguration">Choose Your Configuration</string>
+    <string name="AssertLocationDetails">Assert Location Details:</string>
+    <string name="Status">Status</string>
+    <string name="Description">Description</string>
+    <string name="Cancel">Cancel</string>
+    <string name="film_genres">Film genres</string>
+    <string name="ListOfAssets">List of Assets</string>
+    <string name="AssetTagId">Asset Tag Id</string>
+    <string name="Brand">Brand</string>
+    <string name="Cost">Cost</string>
+    <string name="PurchasedFrom">Purchased from</string>
+    <string name="CreatedBy">Created by</string>
+    <string name="View"> : </string>
+    <string name="NoDataFound">No data found</string>
+    <string name="AssetsView">Assets View</string>
+    <string name="PurchaseDate">Purchase Date</string>
+    <string name="Model">Model</string>
+    <string name="Category">Category</string>
+    <string name="Department">Department</string>
+    <string name="AssignedTo">Assigned to</string>
+    <string name="Name">Name</string>
+    <string name="ViewAssets">View Assets</string>
+    <string name="ViewSection">View Section</string>
+    <string name="Logout">Logout</string>
+    <string name="View_Details">View Details</string>
+    <string name="Save">Save</string>
+    <string name="BarCodeID">Barcode ID</string>
+    <string name="QRCODE_ID">QR CODE ID</string>
+    <string name="NoSectionAvailable">No Sections Available</string>
+    <string name="DataNotAvailable">Data Not Available</string>
+    <string name="BackAlertMessage">Are you sure want to go back..? \n\nThere are no Assets saved.</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" tools:ignore="ExtraTranslation">Hello blank fragment</string>
+
+    <!--<string name="google_maps_key">AIzaSyADC2hoSC5r9WwZCCKMkDAQHXQF7B5h8kc</string>-->
+    <string name="google_maps_key">AIzaSyCHUMFNAu3us1NJshE1wDWdaGb8GLeQbcI</string>
+    <string name="Scanned">Scanned</string>
+    <string name="UnScanned">UnScanned</string>
+    <string name="PleaseEnterYourUserNameBelow">Please enter your user name below</string>
+    <string name="PleaseTryWithOtherSection">No data available…! Try with other section</string>
+
+    <string-array name="film_genre">
+        <item>Audit Configuration</item>
+        <item>Search Audit</item>
+    </string-array>
+
+    <string-array name="actionFilms" />
+    <!--    <item>Bar Code Scanner</item>
+        <item>QR-CODE Scanner</item>
+        <item>RFID Scanner</item>
+    </string-array>-->
+
+    <string-array name="musicals">
+        <item>BarCode Scanner</item>
+        <item>QR-CODE Scanner</item>
+        <item>RFID Scanner</item>
+    </string-array>
+
+    <string-array name="dramas">
+        <item>Commin</item>
+        <item>QR-CODE Scanner</item>
+        <item>QR-CODE Scanner</item>
+        <item>QR-CODE Scanner</item>
+        <item>QR-CODE Scanner</item>
+        <item>RFID Scanner</item>
+    </string-array>
+
+    <string-array name="thrillers">
+        <item>Rusjsa</item>
+        <item>QR-CODE Scanner</item>
+        <item>RFID Scanner</item>
+    </string-array>
+
+    <string-array name="comedies">
+        <item>adasd</item>
+        <item>QR-CODE Scanner</item>
+        <item>RFID Scanner</item>
+    </string-array>
+
+</resources>

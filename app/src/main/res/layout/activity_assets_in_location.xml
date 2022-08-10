@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.QonchAssets.Activity.AssetsInLocationActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlAssertLocationToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorPrimary"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/tvAppTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/poppins_regular"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            tools:ignore="RelativeOverlap" />
+
+        <ImageView
+            android:id="@+id/ivLocationBack"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:src="@drawable/ic_back"
+            android:visibility="visible"
+            tools:ignore="ContentDescription" />
+
+    </RelativeLayout>
+
+    <!--<ImageView
+        android:id="@+id/ivBuildings"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_150sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:background="@drawable/bg_edittext"
+        android:layout_below="@+id/rlAssertLocationToolbar"
+        android:visibility="gone"
+        tools:ignore="ContentDescription" />-->
+
+    <ImageView
+        android:id="@+id/ivNoDataLocationList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/ic_no_search"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvNoDataLocationList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:text="@string/PleaseTryWithOtherSection"
+        android:layout_below="@+id/ivNoDataLocationList"/>
+
+
+    <com.mlsdev.animatedrv.AnimatedRecyclerView
+        android:id="@+id/rvAssetsLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlAssertLocationToolbar"
+        android:layout_margin="@dimen/_3sdp"
+        android:scrollbars="none"
+        app:animationDuration="1000"
+        app:layoutAnimation="@anim/layout_animation_from_bottom"
+        app:layoutManagerOrientation="vertical"
+        app:layoutManagerReverse="false"
+        app:layoutManagerType="linear" />
+
+
+</RelativeLayout>
